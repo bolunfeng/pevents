@@ -6,6 +6,10 @@ on pthreads and provides *most* of the functionality of both manual-
 and auto-reset events on Windows, most-notably including simultaneous
 waits on multiple events (à la `WaitForMultipleObjects`).
 
+查看这个链接，讲得非常好：
+
+https://www.techgrow.cn/posts/c847598e.html
+
 pevents also doubles as a thin, sane wrapper for `CreateEvent()` & co. on
 Windows, meaning you can use pevents directly in your cross-platform
 code without `#ifdefs` for Windows/pthreads.
